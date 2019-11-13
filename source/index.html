@@ -2,11 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка — интернет-магазин игрушек.</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <!-- page-header -->
+    <header class="page-header">
+        <div class="container  page-header__container">
+          <nav class="main-menu">
+            <a class="logo">
+              <img class="page-header__logo-image" src="img/svg/mishka-logo--mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+            </a>
+            <button class="main-menu__button  main-menu__button--close" type="button" title="Открыть/закрыть меню">Меню</button>
+            <ul class="main-menu__list  main-menu__list--main">
+              <li class="main-menu__item  main-menu__item--main">
+                <a class="main-menu__link  main-menu__link--main" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-menu__item  main-menu__item--main">
+                <a class="main-menu__link  main-menu__link--main" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+  
+            <ul class="main-menu__list  main-menu__list--extra">
+              <li class="main-menu__item  main-menu__item--extra">
+                <a class="main-menu__link  main-menu__link--extra" href="#">Новые поступления</a>
+              </li>
+              <li class="main-menu__item  main-menu__item--extra">
+                <a class="main-menu__link  main-menu__link--extra" href="#">Распродажа</a>
+              </li>
+            </ul>
+  
+            <ul class="main-menu__list  main-menu__list--user">
+              <li class="main-menu__item  main-menu__item--user">
+                <a class="main-menu__link  main-menu__link--user  main-menu__link--search" href="#">
+                   Поиск по сайту
+                </a>
+              </li>
+              <li class="main-menu__item  main-menu__item--user">
+                <a class="main-menu__link  main-menu__link--user  main-menu__link--cart" href="#">
+                   Корзина: пока пуста
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <span class="page-header__delivery">Бесплатная доставка по России</span>
+        </div>
+    </header>
+      <!-- page-header end -->
+   
   </body>
 </html>
