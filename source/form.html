@@ -5,51 +5,165 @@
     <title>Мишка — интернет-магазин игрушек.</title>
   </head>
   <body>
-    <!-- page-header -->
-    <header class="page-header">
-        <div class="container  page-header__container">
-          <nav class="main-menu">
-            <a class="logo">
-              <img class="page-header__logo-image" src="img/svg/mishka-logo--mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
-            </a>
-            <button class="main-menu__button  main-menu__button--close" type="button" title="Открыть/закрыть меню">Меню</button>
-            <ul class="main-menu__list  main-menu__list--main">
-              <li class="main-menu__item  main-menu__item--main">
-                <a class="main-menu__link  main-menu__link--main" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="main-menu__item  main-menu__item--main">
-                <a class="main-menu__link  main-menu__link--main" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-  
-            <ul class="main-menu__list  main-menu__list--extra">
-              <li class="main-menu__item  main-menu__item--extra">
-                <a class="main-menu__link  main-menu__link--extra" href="#">Новые поступления</a>
-              </li>
-              <li class="main-menu__item  main-menu__item--extra">
-                <a class="main-menu__link  main-menu__link--extra" href="#">Распродажа</a>
-              </li>
-            </ul>
-  
-            <ul class="main-menu__list  main-menu__list--user">
-              <li class="main-menu__item  main-menu__item--user">
-                <a class="main-menu__link  main-menu__link--user  main-menu__link--search" href="#">
-                   Поиск по сайту
-                </a>
-              </li>
-              <li class="main-menu__item  main-menu__item--user">
-                <a class="main-menu__link  main-menu__link--user  main-menu__link--cart" href="#">
-                   Корзина: пока пуста
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <span class="page-header__delivery">Бесплатная доставка по России</span>
+    
+    <header class="header">
+      <div class="container">
+        <nav class="main-menu">
+          <a class="logo" href="index.html">
+            <img class="header__logo-image" src="img/svg/mishka-logo--mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+          </a>
+          <button class="main-menu__button  main-menu__button--close" type="button" title="Открыть/закрыть меню">Меню</button>
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link  main-menu__link--search" href="#">
+                 Поиск по сайту
+              </a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link  main-menu__link--cart" href="#">
+                 Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <span class="header__delivery">Бесплатная доставка по России</span>
+      </div>
+  </header>
+     
+
+  <main class="order">
+    <div class="intro  intro--order">
+      <div class="container">
+        <h1 class="intro__title">Вязание на заказ</h1>
+      </div>
+    </div>
+    <div class="container">
+      <p class="order__description">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+    </div>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="form__fieldset  form__fieldset--types">
+        <div class="form__field-group">
+          <h2 class="form__field-group-title">Тип</h2>
+          <div class="form__controls">
+            <div class="form__radio-button-block">
+              <input class="form__input  form__input--radio" type="radio" id="furnishings" name="product-type" value="furnishings" checked>
+              <label class="form__label  form__label--radio" for="furnishings">Аксессуар для  интерьера</label>
+            </div>
+            <div class="form__radio-button-block">
+              <input class="form__input  form__input--radio" type="radio" id="kid-toys" name="product-type" value="kid-toys">
+              <label class="form__label  form__label--radio" for="kid-toys">Детская игрушка</label>
+            </div>
+          </div>
         </div>
-    </header>
-    <!-- page-header end -->
+      </fieldset>
+
+      <fieldset class="form__fieldset  form__fieldset--colors  form__fieldset--background">
+        <div class="form__field-group">
+          <h2 class="form__field-group-title">Цвет</h2>
+          <div class="form__controls  form__controls--checkbox">
+            <div class="form__checkbox-block">
+              <input class="form__input  form__input--checkbox" type="checkbox" id="white" name="white" checked>
+              <label class="form__label  form__label--checkbox" for="white">Белый</label>
+            </div>
+            <div class="form__checkbox-block">
+              <input class="form__input  form__input--checkbox" type="checkbox" id="gray" name="gray" checked>
+              <label class="form__label  form__label--checkbox" for="gray">Серый</label>
+            </div>
+            <div class="form__checkbox-block">
+              <input class="form__input  form__input--checkbox" type="checkbox" id="tiffany" name="tiffany">
+              <label class="form__label  form__label--checkbox" for="tiffany">«Тиффани»</label>
+            </div>
+            <div class="form__checkbox-block">
+              <input class="form__input  form__input--checkbox" type="checkbox" id="black" name="black">
+              <label class="form__label  form__label--checkbox" for="black">Черный</label>
+            </div>
+            <div class="form__checkbox-block">
+              <input class="form__input  form__input--checkbox" type="checkbox" id="pink" name="pink">
+              <label class="form__label  form__label--checkbox" for="pink">Розовый</label>
+            </div>
+            <div class="form__checkbox-block">
+              <input class="form__input  form__input--checkbox" type="checkbox" id="orange" name="orange">
+              <label class="form__label  form__label--checkbox" for="orange">Оранжевый</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset  form__fieldset--name">
+        <div class="form__field-group">
+          <h2 class="form__field-group-title">ФИО</h2>
+          <div class="form__controls  form__controls--name">
+            <div class="form__text-field-block">
+              <label class="form__label  form__label--name" for="first-name">Имя:</label>
+              <input class="form__input  form__input--text  form__input--name" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="form__text-field-block">
+              <label class="form__label  form__label--name" for="last-name">Фамилия:</label>
+              <input class="form__input  form__input--text  form__input--name" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="form__text-field-block">
+              <label class="form__label  form__label--name" for="middle-name">Отчество:</label>
+              <input class="form__input  form__input--text  form__input--name" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset  form__fieldset--tel  form__fieldset--background">
+        <div class="form__field-group  form__field-group--tel">
+          <h2 class="form__field-group-title  form__field-group-title--tel">Тел</h2>
+          <div class="form__controls  form__controls--tel">
+            <input class="form__input  form__input--text  form__input--tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset  form__fieldset--email  form__fieldset--background">
+        <div class="form__field-group">
+          <h2 class="form__field-group-title  form__field-group-title--email">E-mail</h2>
+          <div class="form__controls  form__controls--email">
+            <input class="form__input  form__input--text  form__input--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset  form__fieldset--extra-wishes">
+        <div class="form__field-group">
+          <h2 class="form__field-group-title">Доп</h2>
+          <div class="form__controls">
+            <textarea class="form__input  form__input--big-text" id="extra-wishes" name="extra-wishes" placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form__footer container">
+        <p class="form__field-mark">*Поля обязательны для заполнения</p>
+        <button class="button  form__button" type="submit" title="Отправить заказ">Отправить заказ</button>
+      </div>
+    </form>
+  </main>
    
-    <!-- page-footer -->
+    
        <footer> 
         <ul class="social-list">
             <li class="social-list__item">
@@ -73,7 +187,7 @@
               <svg></svg>
             </a>
           </div>
-       </footer><!-- page-footer end -->
+       </footer>
 
   </body>
 </html>
