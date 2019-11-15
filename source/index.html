@@ -5,49 +5,49 @@
     <title>Мишка — интернет-магазин игрушек.</title>
   </head>
   <body>
-    <!-- page-header -->
-    <header class="page-header">
-        <div class="container  page-header__container">
+    
+    <header class="header">
+        <div class="container">
           <nav class="main-menu">
-            <a class="logo">
-              <img class="page-header__logo-image" src="img/svg/mishka-logo--mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+            <a class="logo" href="index.html">
+              <img class="header__logo-image" src="img/svg/mishka-logo--mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
             </a>
             <button class="main-menu__button  main-menu__button--close" type="button" title="Открыть/закрыть меню">Меню</button>
-            <ul class="main-menu__list  main-menu__list--main">
-              <li class="main-menu__item  main-menu__item--main">
-                <a class="main-menu__link  main-menu__link--main" href="catalog.html">Каталог товаров</a>
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="main-menu__item  main-menu__item--main">
-                <a class="main-menu__link  main-menu__link--main" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-  
-            <ul class="main-menu__list  main-menu__list--extra">
-              <li class="main-menu__item  main-menu__item--extra">
-                <a class="main-menu__link  main-menu__link--extra" href="#">Новые поступления</a>
-              </li>
-              <li class="main-menu__item  main-menu__item--extra">
-                <a class="main-menu__link  main-menu__link--extra" href="#">Распродажа</a>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="form.html">Вязание на заказ</a>
               </li>
             </ul>
   
-            <ul class="main-menu__list  main-menu__list--user">
-              <li class="main-menu__item  main-menu__item--user">
-                <a class="main-menu__link  main-menu__link--user  main-menu__link--search" href="#">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Новые поступления</a> 
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+  
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link  main-menu__link--search" href="#">
                    Поиск по сайту
                 </a>
               </li>
-              <li class="main-menu__item  main-menu__item--user">
-                <a class="main-menu__link  main-menu__link--user  main-menu__link--cart" href="#">
+              <li class="main-menu__item">
+                <a class="main-menu__link  main-menu__link--cart" href="#">
                    Корзина: пока пуста
                 </a>
               </li>
             </ul>
           </nav>
-          <span class="page-header__delivery">Бесплатная доставка по России</span>
+          <span class="header__delivery">Бесплатная доставка по России</span>
         </div>
     </header>
-    <!-- page-header end -->
+    
    
     <main class="main-page-content">
         <div class="main-page-content__description">
@@ -66,7 +66,7 @@
           </ul>
         </div>
   
-        <!-- product -->
+       
         <article class="product  product--hit">
           <div class="container  product__container">
             <div class="product__title">
@@ -93,9 +93,9 @@
             <div class="product__price">Цена: 990 руб.</div>
             <a class="button  product__button  js-to-cart" href="#" title="Заказать товар">Заказать</a>
           </div>
-        </article><!-- product end -->
+        </article>
   
-        <!-- about-us -->
+        
         <section class="about-us">
           <div class="container">
             <h2 class="about-us__title">Коротко о нас:</h2>
@@ -108,9 +108,9 @@
               <li class="about-us__feature  about-us__feature--present">Поставляется в подарочной упаковке</li>
             </ul>
           </div>
-        </section><!-- about-us end -->
+        </section>
   
-<!-- reviews -->
+
 <section class="reviews">
     <div class="container  reviews__container">
       <h2 class="reviews__title">Отзывы</h2>
@@ -127,14 +127,12 @@
       </div>
       <a class="button  reviews__button" href="review-create.html" title="Написать отзыв">Написать</a>
     </div>
-  </section><!-- reviews end -->
-
-
-     </main>
+  </section>
+  </main>
   
-      <!-- page-footer -->
+  
       <footer class="page-footer  page-footer--main-page">
-        <!-- contacts -->
+        
         <section class="contacts">
           <div class="container">
             <h2 class="contacts__title">Контакты</h2>
@@ -157,7 +155,7 @@
           <div class="container">
             <a class="button  contacts__button" href="feedback-create.html">Напишите нам</a>
           </div>
-        </section><!-- contacts end -->
+        </section>
   
         <ul class="social-list">
             <li class="social-list__item">
@@ -181,7 +179,7 @@
               <svg></svg>
             </a>
           </div>
-       </footer><!-- page-footer end -->
+       </footer>
 
   </body>
 </html>
