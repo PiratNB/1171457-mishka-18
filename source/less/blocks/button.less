@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 0;
+  border: 2px solid @button-field-border-color;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: @button-bg-color;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
