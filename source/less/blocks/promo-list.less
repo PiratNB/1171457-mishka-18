@@ -1,0 +1,130 @@
+.promo-list {
+  position: relative;
+  .list-reset();
+
+  width: 100%;
+
+  @media @mobile-l {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.promo-list__item {
+  @media @mobile-l {
+    width: 50%;
+  }
+
+  @media @tablet {
+    width: 384px;
+  }
+
+  @media @desktop {
+    width: 525px;
+  }
+}
+
+.promo-list__link {
+  position: relative;
+  display: block;
+  padding: 26px 30px 29px;
+  font-size: 19px;
+  font-weight: 700;
+  color: @white;
+  text-decoration: none;
+
+  @media @tablet {
+    padding: 28px 35px 31px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+
+    &::before {
+      bottom: -5px;
+      height: 5px;
+    }
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &--interior {
+    background-color: @green-primary;
+
+    &:hover,
+    &:active {
+      background-color: @green-primary--hover;
+    }
+
+    &::before {
+      background-color: @green-primary;
+    }
+
+    &::after {
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-size: 40px 62px;
+    }
+  }
+
+  &--toy {
+    background-color: @green-secondary;
+
+    &:hover,
+    &:active {
+      background-color: @green-secondary--hover;
+    }
+
+    &::before {
+      background-color: @green-secondary;
+    }
+
+    &::after {
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      background-size: 60px 60px;
+
+      @media @tablet {
+        right: 34px;
+      }
+    }
+  }
+}
+
+.promo-list__text {
+  display: block;
+  max-width: 120px;
+}

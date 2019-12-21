@@ -1,97 +1,68 @@
 .page-footer {
-  background-color: @background-color;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: @bg-color-footer;
 
-  &--main-page {
-    background: none;
+  @media @tablet {
+    padding-top: 48px;
+    padding-bottom: 46px;
   }
 }
 
-.page-footer .logo {
-  display: none;
+.page-footer__content-wrapper {
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.page-footer__bottom {
-  background-color: @background-color;
+.page-footer__logo {
+  display: none;
+
+  @media @tablet {
+    display: block;
+    margin-right: 83px;
+  }
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 39px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  border-top: 1px solid #e5e5e5;
+  margin-top: 14px;
+  margin-bottom: 7px;
+
+  @media @tablet {
+    margin: 0;
+    width: 184px;
+  }
+}
+
+.page-footer__copyright-text {
   font-size: 19px;
-  line-height: 18px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  color: @title-text-color;
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
+  font-weight: 700;
+  line-height: 19px;
 }
 
-.page-footer__copyright-author-link {
-  width: 27px;
-  height: 34px;
-  margin-left: 28px;
-}
-
-.page-footer__copyright-icon path {
-  fill: #63d1bb;
-
-  &:hover {
-    fill: #46c1ae;
-  }
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0 7px;
+  color: @font-color-menu;
+  text-decoration: none;
 
   &:active {
-    fill: #46c1ae;
     opacity: 0.3;
   }
 }
 
-@media @tablet-widths {
-  .page-footer__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 52px 0;
-    padding-left: 10px;
-  }
+.page-footer__copyright-image {
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+  fill: @green-primary;
 
-  .page-footer .logo {
-    position: static;
-    display: block;
-    width: 33.333333%;
-    transform: none;
-    text-align: left;
-
-    &:hover {
-      fill: #46c1ae;
-    }
-
-    &:active {
-      fill: #46c1ae;
-      opacity: 0.3;
-    }
-  }
-
-  .page-footer .social-list {
-    width: 33.333333%;
-  }
-
-  .page-footer__copyright {
-    width: 33.333333%;
-    padding: 0;
-    border: 0;
-    text-align: right;
-  }
-}
-
-@media @desktop-widths {
-  .page-footer__container {
-    padding: 52px 0;
-    padding-left: 12px;
+  .page-footer__copyright-link:hover &,
+  .page-footer__copyright-link:active & {
+    fill: @green-secondary--hover;
   }
 }

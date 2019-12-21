@@ -1,0 +1,149 @@
+.card-product {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+
+  @media @tablet {
+    width: 668px;
+  }
+
+  @media @desktop {
+    width: 316px;
+  }
+}
+
+.card-product__link-image {
+  display: block;
+  overflow: hidden;
+  width: 260px;
+
+  @media @tablet {
+    width: 50%;
+  }
+
+  @media @desktop {
+    width: 100%;
+  }
+}
+
+.card-product__image {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @media @tablet {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media @desktop {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.card-product__description-wrapper {
+  box-sizing: border-box;
+  padding: 26px 27px 11px;
+  width: 260px;
+  border: 1px solid @bg-color-separate;
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    width: 50%;
+  }
+
+  @media @desktop {
+    padding-bottom: 9px;
+    width: 100%;
+    min-height: 197px;
+  }
+}
+
+.card-product:hover .card-product__description-wrapper {
+  .ps-drop-shadow(@black; 10%; 90deg; 6px; 0; 10px);
+}
+
+.card-product:active .card-product__description-wrapper {
+  .ps-drop-shadow(@black; 10%; 90deg; 3px; 0; 5px);
+}
+
+.card-product__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  color: @font-color-heading;
+
+  @media @tablet {
+    font-size: 20px;
+  }
+}
+
+.card-product__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-product__description {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-size: 13px;
+  line-height: 30px;
+
+  @media @tablet {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+}
+
+.card-product__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0 16px;
+  border-top: 1px solid @bg-color-separate;
+
+  @media @tablet {
+    margin-top: auto;
+    padding: 22px 4px 15px;
+  }
+
+  @media @desktop {
+    padding: 22px 5px 17px 0;
+  }
+}
+
+.card-product__price {
+  margin: 0;
+  font-weight: 700;
+  color: @font-color-heading;
+
+  @media @tablet {
+    font-size: 17px;
+  }
+}
+
+.card-product__button {
+  width: 20px;
+  height: 19px;
+}
+
+.card-product__button-image {
+  overflow-x: hidden;
+  width: 20px;
+  height: 19px;
+  fill: @bg-color-icon;
+  pointer-events: none;
+
+  .card-product__button:hover &,
+  .card-product__button:active & {
+    fill: @green-primary;
+  }
+
+  .card-product__button:active & {
+    fill-opacity: 0.3;
+  }
+}

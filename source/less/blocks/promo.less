@@ -1,0 +1,98 @@
+.promo {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: @bg-color-promo;
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+
+    @media @tablet {
+      content: "";
+      bottom: -12px;
+      height: 24px;
+      background-size: 768px 24px;
+      background-position-x: 0;
+    }
+
+    @media @desktop {
+      bottom: -17px;
+      height: 34px;
+      background-size: auto 37px;
+      background-position-x: 12px;
+    }
+  }
+}
+
+.promo__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 71px 0 0;
+  min-height: 489px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-size: image-size("../img/hero-mobile@1x.jpg");
+  background-position: center -15%;
+  background-repeat: no-repeat;
+
+  @media @retina {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+
+  @media @mobile-l-only {
+    min-height: 400px;
+  }
+
+  @media @tablet {
+    min-height: 685px;
+    padding-top: 93px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: image-size("../img/hero-tablet@1x.jpg");
+    background-position: center bottom;
+
+    @media @retina {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
+
+  @media @desktop {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: image-size("../img/hero-desktop@1x.jpg");
+    background-position: center bottom;
+
+    @media @retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo__title {
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: auto;
+  padding: 0 30px;
+  width: 100%;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @font-color-heading;
+  text-align: center;
+
+  @media @tablet {
+    padding: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media @desktop {
+    padding: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

@@ -1,0 +1,36 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .list-reset();
+
+  padding-bottom: 19px;
+  border-bottom: 1px solid @bg-color-separate;
+
+  @media @tablet {
+    padding-bottom: 0;
+    width: 300px;
+    border-bottom: 0;
+  }
+}
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 13px 0 6px;
+  width: 40px;
+  height: 40px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-links__image {
+  .social-links__link:hover &,
+  .social-links__link:active & {
+    fill: @green-secondary--hover;
+  }
+}
