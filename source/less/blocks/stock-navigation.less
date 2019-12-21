@@ -1,0 +1,35 @@
+.stock-navigation {
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  .list-reset(50px);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  @media @desktop {
+    width: 500px;
+  }
+}
+
+.stock-navigation__item {
+  &:not(:last-child) {
+    @media @desktop {
+      margin-right: 34px;
+    }
+  }
+}
+
+.stock-navigation__link {
+  display: block;
+  padding: 18px 29px 18px 0;
+  color: @font-color-menu;
+  text-decoration: none;
+
+  &[href]:hover {
+    color: @font-color-menu--hover;
+  }
+
+  &[href]:active {
+    color: @font-color-menu--active;
+  }
+}

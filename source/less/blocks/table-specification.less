@@ -1,0 +1,21 @@
+.table-specification {
+  width: 100%;
+  border-spacing: 0;
+  line-height: 20px;
+}
+
+.table-specification__row {
+  .ps-drop-shadow(@bg-color-separate; 100%; 90deg; 1px);
+}
+
+.table-specification__cell {
+  padding: 10px 10px 10px 0;
+
+  &:first-child {
+    width: 37.5%;
+
+    @media @tablet {
+      width: 33.4%;
+    }
+  }
+}

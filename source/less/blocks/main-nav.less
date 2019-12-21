@@ -1,0 +1,134 @@
+.main-nav {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1150px;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__logo-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 22px 30px 21px;
+  border-bottom: 1px solid @bg-color-separate;
+
+  @media @tablet {
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding: 21px 50px;
+    background-color: @bg-color-body;
+  }
+
+  @media @desktop {
+    flex-grow: 0;
+    order: 1;
+    padding: 7px 0 6px;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 3px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  @media @tablet {
+    display: none;
+  }
+
+  &--off {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 2px;
+      box-shadow: 0 6px 0 0 @black, 0 12px 0 0 @black;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__site-list {
+  @media @tablet {
+    order: 1;
+  }
+
+  @media @desktop {
+    order: 0;
+  }
+}
+
+.main-nav__user-list {
+  @media @desktop {
+    order: 2;
+  }
+}
+
+.main-nav__stock-list {
+  display: none;
+
+  @media @desktop {
+    display: flex;
+    order: 3;
+  }
+}
+
+.main-nav__text {
+  display: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 18px 50px;
+  text-align: right;
+
+  @media @tablet {
+    display: block;
+    order: 2;
+    width: 48%;
+  }
+
+  @media @desktop {
+    order: 4;
+    margin-left: auto;
+    width: 500px;
+  }
+}

@@ -1,0 +1,74 @@
+.page-main {
+  border-bottom: 1px solid @gray-secondary;
+}
+
+.page-main__header {
+  position: relative;
+  padding-top: 71px;
+  padding-bottom: 76px;
+  background-color: @gray-secondary;
+
+  @media @tablet {
+    padding-top: 36px;
+    padding-bottom: 79px;
+  }
+
+  @media @desktop {
+    padding-top: 34px;
+    padding-bottom: 102px;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+
+    @media @tablet {
+      content: "";
+      bottom: -12px;
+      height: 24px;
+      background-size: 768px 24px;
+      background-position-x: 0;
+    }
+
+    @media @desktop {
+      bottom: -17px;
+      height: 34px;
+      background-size: 1150px 34px;
+    }
+  }
+}
+
+.page-main__title {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @font-color-heading;
+  text-align: center;
+
+  @media @tablet {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.page-main__video {
+  margin-bottom: 57px;
+
+  @media @tablet {
+    margin-bottom: 62px;
+  }
+
+  @media @desktop {
+    margin-bottom: 104px;
+  }
+}

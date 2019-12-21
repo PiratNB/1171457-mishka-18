@@ -1,0 +1,195 @@
+.week-goods {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 6px;
+
+  @media @tablet {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  @media @desktop {
+    padding-top: 119px;
+    padding-bottom: 61px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: -8px;
+    background-repeat: repeat-x;
+
+    @media @tablet {
+      height: 17px;
+      background-size: 768px 17px;
+      background-position-x: -20px;
+    }
+
+    @media @desktop {
+      left: 50px;
+      right: 50px;
+      height: 23px;
+      background-size: 1050px 21px;
+      background-position-x: -25px;
+    }
+  }
+}
+
+.week-goods__header {
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 5px 0;
+  }
+
+  @media @desktop {
+    padding-left: 19px;
+  }
+}
+
+.week-goods__title {
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  @media @tablet {
+    margin: 0;
+    max-width: 500px;
+  }
+
+  @media @desktop {
+    order: 1;
+    max-width: none;
+  }
+}
+
+.week-goods__mark {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: @font-color-legend;
+  text-transform: uppercase;
+
+  @media @tablet {
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+    max-width: 127px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media @desktop {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
+
+.week-goods__content-wrapper {
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 36px;
+
+  @media @tablet {
+    padding-top: 16px;
+    padding-right: 378px;
+  }
+
+  @media @desktop {
+    padding-left: 175px;
+    padding-right: 584px;
+  }
+}
+
+.week-goods__description {
+  margin-top: 17px;
+  margin-bottom: 17px;
+
+  @media @tablet {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media @desktop {
+    margin-bottom: 47px;
+  }
+}
+
+.week-goods__table {
+  margin-bottom: 28px;
+
+  @media @tablet {
+    margin-bottom: 57px;
+  }
+
+  @media @desktop {
+    margin-bottom: 110px;
+  }
+}
+
+.week-goods__image-wrapper {
+  margin: 0 auto;
+  width: 260px;
+  height: 315px;
+  overflow: hidden;
+
+  @media @tablet {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    margin: 0;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media @desktop {
+    z-index: -1;
+    top: -143px;
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.week-goods__image {
+  display: block;
+  width: 260px;
+  height: auto;
+
+  @media @tablet {
+    width: 333px;
+  }
+
+  @media @desktop {
+    width: 525px;
+  }
+}
+
+.week-goods__price {
+  margin-top: 25px;
+  margin-bottom: 26px;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+
+  @media @tablet {
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+}
+
+.week-goods__button {
+  @media @desktop {
+    margin: 0;
+  }
+}

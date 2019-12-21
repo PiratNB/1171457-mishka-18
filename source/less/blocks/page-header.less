@@ -1,22 +1,17 @@
-.page-header__container {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid @border-extra-color;
-}
+.page-header {
+  background-color: @bg-color-body;
 
-.page-header__delivery {
-  display: none;
-}
-
-@media @tablet-widths {
-  .page-header__container {
-    border: 0;
+  @media @tablet {
+    background-color: @gray-secondary;
   }
 
-  .page-header__delivery {
-    align-self: flex-end;
-    display: block;
-    margin-bottom: -42px;
-    padding-top: 18px;
+  @media @desktop {
+    overflow: hidden;
+  }
+
+  &--index {
+    @media @tablet {
+      background-color: @bg-color-promo;
+    }
   }
 }
