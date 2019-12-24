@@ -55,7 +55,7 @@
   }
 
   function openOrderForm(evt) {
-    let element = evt.target;
+    var element = evt.target;
 
     if (
       element.classList.contains('card-product__button') ||
@@ -67,7 +67,7 @@
   }
 
   function closeOrderForm(evt) {
-    let element = evt.target;
+    var element = evt.target;
 
     if (element.classList.contains('modal-overlay') || evt.keyCode === 27) {
       overlayModal.classList.remove('modal-overlay--opened');
@@ -79,13 +79,13 @@
 /*eslint-disable*/
 function init(ymaps) {
   /*eslint-enable*/
-  let map = new ymaps.Map('map', {
+  var map = new ymaps.Map('map', {
     center: [59.93944115603922, 30.32302403991186],
     zoom: 16,
     controls: ['zoomControl']
   });
 
-  let placemark = new ymaps.Placemark(
+  var placemark = new ymaps.Placemark(
     [59.938633647616214, 30.32304549758399],
     {},
     {
