@@ -30,6 +30,7 @@
   var overlayModal = document.querySelector('.modal-overlay');
   var catalogBlock = document.querySelector('.catalog');
   var orderButton = document.querySelector('.week-goods__button');
+  var catalogButton = document.querySelectorAll('.card-product__button');
 
   if (catalogButton) {
     for (var i = 0; i < catalogButton.length; i++) {
