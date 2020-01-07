@@ -2,7 +2,7 @@
 
 
 (function() {
-  // Меню
+
   var toggleButton = document.getElementById('toggle-button');
   var mainNav = document.querySelector('.main-nav');
   var siteNavigation = document.querySelector('.site-navigation');
@@ -26,7 +26,6 @@
     });
   }
 
-  // Модальное окно заказа товара. Не могу понять, почему не работает???
   var overlayModal = document.querySelector('.modal-overlay');
   var catalogBlock = document.querySelector('.catalog');
   var orderButton = document.querySelector('.week-goods__button');
